@@ -16,21 +16,21 @@ function ToDo({ todo, toggleComplete, handleDelete }) {
   return (
     <body>
     <div className="todo">
-      <Box sx={{ boxShadow: "1px 2px 9px #F4AAB9", borderRadius: "20px" ,flexGrow: 1, margin:"10%", marginTop: "2%", marginBottom: "2%"}}>
+      <Box sx={{backgroundColor: "#9cc495", boxShadow: "1px 2px 9px #F4AAB9", borderRadius: "20px" ,flexGrow: 1, margin:"10%", marginTop: "2%", marginBottom: "2%"}}>
         <input
-        style={{ margin: "1%", border: "1px", fontSize: "1.5rem",textDecoration: todo.completed && "line-through" }}
+        style={{backgroundColor: "#9cc495", margin: "1%", border: "1px", fontSize: "1.5rem",textDecoration: todo.completed && "line-through" }}
         value={todo.title === "" ? newTitle : todo.title}
         className="list"
         onChange={handleChange}
       />
             <input
-        style={{ backgroundColor: "#cce3d8", margin: "1%", border: "1px", fontSize: "1.5rem",textDecoration: todo.completed && "line-through" }}
+        style={{ backgroundColor: "#9cc495", margin: "1%", border: "1px", fontSize: "1.5rem",textDecoration: todo.completed && "line-through" }}
         value={todo.time === "" ? newTime : todo.time}
         className="list"
         onChange={handleChange}
       />
           <input
-        style={{ backgroundColor: "#cce3d8", margin: "1%", border: "1px", fontSize: "1.5rem",textDecoration: todo.completed && "line-through" }}
+        style={{ backgroundColor: "#9cc495", margin: "1%", border: "1px", fontSize: "1.5rem",textDecoration: todo.completed && "line-through" }}
         value={todo.date === "" ? newDate : todo.date}
         className="list"
         onChange={handleChange}

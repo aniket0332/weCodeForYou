@@ -29,7 +29,7 @@ function AddToDo() {
 
   return (
     <div className='container' style={{ marginTop: "3%", width: "20rem" }}>
-      <div className="card" style={{ padding: "5%", boxShadow: "1px 2px 9px #F4AAB9" }}>
+      <div className="card" style={{backgroundColor: "#c2cfbe", padding: "5%", boxShadow: "1px 2px 9px #F4AAB9" }}>
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column" }}>
           <input
             className="form-control"

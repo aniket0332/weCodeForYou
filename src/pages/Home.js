@@ -62,11 +62,10 @@ const Home = () => {
 
   return (loading ? <CircularProgress />
     :
-    <div style={{backgroundColor: "rgba(46, 196, 30, 0.08)", paddingBottom: "1%"}}>
+    <div style={{backgroundColor: "#d5dbc8", paddingBottom: "1%"}}>
       <Header/>
       <div>
         <AddToDo />
-
         <div className="todo_container">
           {todos.map((todo) => (
             <ToDo
