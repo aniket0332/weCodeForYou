@@ -19,7 +19,7 @@ const Register = () => {
 
   useEffect(()=>{
     if(currentUser){
-      navigate("/");
+      navigate("/weCodeForYou");
     }
 
   }, [currentUser, navigate]);
@@ -111,7 +111,7 @@ const Register = () => {
             </button>
             <hr />
             <p> Already have an account </p>
-         <Link to="/login" style={{padding: "3%"}}>
+         <Link to="/weCodeForYou/login" style={{padding: "3%"}}>
             Login
          </Link>
         </form>

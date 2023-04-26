@@ -24,9 +24,9 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route exact path="/weCodeForYou" element={<Home />} />
+        <Route path="/weCodeForYou/login" element={<Login />} />
+        <Route path="/weCodeForYou/register" element={<Register />} />
       </Routes>
     </div>
     </BrowserRouter>

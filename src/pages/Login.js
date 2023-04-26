@@ -19,7 +19,7 @@ const Login = () => {
  
    useEffect(()=>{
      if(currentUser){
-       navigate("/");
+       navigate("/weCodeForYou");
      }
  
    }, [currentUser, navigate]);
@@ -84,7 +84,7 @@ const Login = () => {
             </button>
             <hr style={{margin: "3%"}}/>
          <p> Don't have an account </p>
-         <Link to="/register">
+         <Link to="/weCodeForYou/register">
             <button style={{marginBottom: "10%"}} className='btn btn-primary btn-block' type='button' id='btn-signup'>
             <i className='fas fa-user-plus'></i> Sign up New Account
             </button>
