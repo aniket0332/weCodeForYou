@@ -55,7 +55,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!currentUser) {
-      navigate("/login");
+      navigate("/weCodeForYou/login");
     }
 
   }, [currentUser, navigate]);
