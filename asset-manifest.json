@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/weCodeForYou/static/css/main.d05b0687.css",
+    "main.js": "/weCodeForYou/static/js/main.72d1d82e.js",
+    "static/js/787.c9560b2a.chunk.js": "/weCodeForYou/static/js/787.c9560b2a.chunk.js",
+    "index.html": "/weCodeForYou/index.html",
+    "main.d05b0687.css.map": "/weCodeForYou/static/css/main.d05b0687.css.map",
+    "main.72d1d82e.js.map": "/weCodeForYou/static/js/main.72d1d82e.js.map",
+    "787.c9560b2a.chunk.js.map": "/weCodeForYou/static/js/787.c9560b2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d05b0687.css",
+    "static/js/main.72d1d82e.js"
+  ]
+}
