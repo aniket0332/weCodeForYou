@@ -59,7 +59,9 @@ export const registerInitiate = (email, password, displayName) => {
                 displayName
             });
             dispatch(registerSuccess(user))
-        }).catch((error) => dispatch(registerFail(error.message)));
+        }).catch((error) => {
+            alert(error);
+            dispatch(registerFail(error.message))});
     }
 };
 

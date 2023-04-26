@@ -33,6 +33,7 @@ const Register = () => {
     const handleSubmit = (e) => {
        e.preventDefault();
        if(password !== passwordConfirm) {
+        alert("both passwords should be same");
         return;
        }
        dispatch(registerInitiate(email, password, displayName));
@@ -48,13 +49,14 @@ const Register = () => {
     :
     <div>
     <div style={{marginTop:"0%", padding: "3%" , backgroundColor: "rgba(46, 196, 30, 0.08)"}}>
-      <div className='card' style={{boxShadow:'1px 2px 9px #F4AAB9', maxWidth: "405px", textAlign: "center", marginLeft: "auto",
+      <div className='card' style={{ borderRadius: "1.5rem",boxShadow:'1px 2px 9px #F4AAB9', maxWidth: "405px", textAlign: "center", marginLeft: "auto",
           marginRight: "auto"}}>
            
             <img
             height="210"
             src="https://clickup.com/blog/wp-content/uploads/2020/01/note-taking.png"
             alt="loading"
+            style={{borderTopLeftRadius: "1.5rem",borderTopRightRadius: "1.5rem"}}
           />
       <div id="register-form">
         <form className='form-signin' onSubmit={handleSubmit} style={{display:'flex',flexDirection: 'column', alignItems: "center"}}>
