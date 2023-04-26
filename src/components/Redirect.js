@@ -10,7 +10,7 @@ const Redirect = () => {
         setcount((currentCount) => --currentCount)
      }, 1000)
 
-     count === 0 && navigate("/login")
+     count === 0 && navigate("/weCodeForYou/login")
      return () => clearInterval(interval);
     }, [count, navigate]);
     return (
