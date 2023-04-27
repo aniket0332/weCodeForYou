@@ -70,7 +70,9 @@ export const loginInitiate = (email, password) => {
         dispatch(loginStart());
         signInWithEmailAndPassword(auth, email, password).then(({ user }) => {
             dispatch(loginSuccess(user))
-        }).catch((error) => dispatch(loginFail(error.message)));
+        }).catch((error) => {
+            alert("Invalid email or password");
+            dispatch(loginFail(error.message))});
     };
 };
 
@@ -79,6 +81,8 @@ export const logoutInitiate = (email, password) => {
         dispatch(logoutStart());
         signOut(auth)
             .then((resp) => dispatch(logoutSuccess()))
-            .catch((error) => dispatch(logoutFail(error.message)));
+            .catch((error) => {
+                alert(error);
+                dispatch(logoutFail(error.message))});
     };
 };
